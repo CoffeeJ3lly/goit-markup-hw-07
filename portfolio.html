@@ -24,37 +24,44 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="page-header">
-      <div class="container menu">
+    <header class="header">
+      <div class="container header-container">
         <!-- Navigation Bar -->
-        <nav class="navigation">
-          <a class="logo-link" href="./index.html">
-            <span class="logo">WEB</span>
-            <span class="studio">STUDIO</span>
+        <nav>
+          <a href="./index.html" class="logo-web link">
+            WEB
+            <span class="logo-studio">STUDIO</span>
           </a>
-
-          <ul class="nav-menu list">
-            <li class="item">
-              <a class="page link" href="./index.html">Studio</a>
+          <ul class="menu list">
+            <li>
+              <a class="menu-link link active-link" href="./index.html">
+                Studio
+              </a>
             </li>
-            <li class="item">
-              <a class="page current link" href="./portfolio.html">Portfolio</a>
+            <li>
+              <a
+                class="menu-link hover-underline-animation link"
+                href="./portfolio.html"
+              >
+                Portfolio
+              </a>
             </li>
-            <li class="item">
-              <a class="page link" href="#">Contacts</a>
+            <li>
+              <a class="menu-link hover-underline-animation link" href="#">
+                Contacts
+              </a>
             </li>
           </ul>
         </nav>
 
-        <ul class="contacts-menu list">
-          <li class="item">
-            <a class="contact link" href="mailto:info@devstudio.com"
+        <ul class="container-contacts list">
+          <li>
+            <a class="contact-links" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-
-          <li class="item">
-            <a class="contact link" href="tel:+110001111111"
+          <li>
+            <a class="contact-links" href="tel:+110001111111"
               >+11 (000) 111-11-11</a
             >
           </li>
@@ -64,244 +71,231 @@
 
     <!-- MAIN -->
     <main>
-      <!-- Filter Section -->
       <section class="section">
         <div class="container">
-          <!-- Filter Buttons -->
-          <ul class="filters list">
-            <li class="space">
-              <button class="button filter current" type="button">All</button>
+          <ul class="filter list">
+            <li>
+              <button type="button" class="button-filter-active button-filter">
+                All
+              </button>
             </li>
-            <li class="space">
-              <button class="button filter" type="button">Web Site</button>
+            <li>
+              <button type="button" class="button-filter">Web Site</button>
             </li>
-            <li class="space">
-              <button class="button filter" type="button">App</button>
-            </li>
-            <li class="space">
-              <button class="button filter" type="button">Design</button>
-            </li>
-            <li class="space">
-              <button class="button filter" type="button">Marketing</button>
+            <li><button type="button" class="button-filter">App</button></li>
+            <li><button type="button" class="button-filter">Design</button></li>
+            <li>
+              <button type="button" class="button-filter">Marketing</button>
             </li>
           </ul>
 
-          <!-- Row 1 Cards -->
-          <ul class="projects list">
-            <li class="project-card">
-              <a href="" class="project link">
-                <div class="project-cover-wrap">
-                  <img
-                    src="./images/row-1-img-1.jpg"
-                    alt="interface concept image"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project-cover-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam temporibus maxime labore incidunt dolorum
-                    assumenda ullam ratione sint dolorem tenetur!
-                  </p>
-                </div>
+          <ul class="portfolio list">
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#">
+                <div class="portfolio-card">
+                  <div class="portfolio-card-overlay">
+                    <img
+                      src="./images/row-1-img-1.jpg"
+                      width="360"
+                      alt="Banking App Interface Concept"
+                    />
+                    <p class="portfolio-card-desc">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
 
-                <div class="substrate">
-                  <h2 class="name">Banking App Interface Concept</h2>
-
-                  <p class="type">App</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="project-card">
-              <a href="" class="project link">
-                <div class="project-cover-wrap">
-                  <img
-                    src="./images/row-1-img-2.jpg"
-                    alt="cashless payment image"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project-cover-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam temporibus maxime labore incidunt dolorum
-                    assumenda ullam ratione sint dolorem tenetur!
-                  </p>
-                </div>
-
-                <div class="substrate">
-                  <h2 class="name">Cashless Payment</h2>
-
-                  <p class="type">Marketing</p>
+                  <div class="portfolio-text-wrapper">
+                    <h3 class="portfolio_title">
+                      Banking App Interface Concept
+                    </h3>
+                    <p class="portfolio_description">App</p>
+                  </div>
                 </div>
               </a>
             </li>
 
-            <li class="project-card">
-              <a href="" class="project link">
-                <div class="project-cover-wrap">
-                  <img
-                    src="./images/row-1-img-3.jpg"
-                    alt="meditation app image"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project-cover-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam temporibus maxime labore incidunt dolorum
-                    assumenda ullam ratione sint dolorem tenetur!
-                  </p>
-                </div>
-
-                <div class="substrate">
-                  <h2 class="name">Meditation App</h2>
-
-                  <p class="type">App</p>
-                </div>
-              </a>
-            </li>
-
-            <!-- Row 2 Cards -->
-            <li class="project-card">
-              <a href="" class="project link">
-                <div class="project-cover-wrap">
-                  <img
-                    src="./images/row-2-img-1.jpg"
-                    alt="taxi image"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project-cover-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam temporibus maxime labore incidunt dolorum
-                    assumenda ullam ratione sint dolorem tenetur!
-                  </p>
-                </div>
-
-                <div class="substrate">
-                  <h2 class="name">Taxi Service</h2>
-
-                  <p class="type">Marketing</p>
+            <li class="portfolio-item">
+              <a href="#" class="portfolio-link">
+                <div class="portfolio-card">
+                  <div class="portfolio-card-overlay">
+                    <img
+                      src="./images/row-1-img-2.jpg"
+                      width="360"
+                      alt="Cashless Payment"
+                    />
+                    <p class="portfolio-card-desc">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                  <div class="portfolio-text_wrapper">
+                    <h3 class="portfolio_title">Cashless Payment</h3>
+                    <p class="portfolio_description">Marketing</p>
+                  </div>
                 </div>
               </a>
             </li>
 
-            <li class="project-card">
-              <a href="" class="project link">
-                <div class="project-cover-wrap">
-                  <img
-                    src="./images/row-2-img-2.jpg"
-                    alt="screens image"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project-cover-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam temporibus maxime labore incidunt dolorum
-                    assumenda ullam ratione sint dolorem tenetur!
-                  </p>
-                </div>
-
-                <div class="substrate">
-                  <h2 class="name">Screen Illustrations</h2>
-
-                  <p class="type">Design</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="project-card">
-              <a href="" class="project link">
-                <div class="project-cover-wrap">
-                  <img
-                    src="./images/row-2-img-3.jpg"
-                    alt="online course image"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project-cover-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam temporibus maxime labore incidunt dolorum
-                    assumenda ullam ratione sint dolorem tenetur!
-                  </p>
-                </div>
-
-                <div class="substrate">
-                  <h2 class="name">Online Courses</h2>
-
-                  <p class="type">Marketing</p>
+            <li class="portfolio-item">
+              <a href="#" class="portfolio-link link">
+                <div class="portfolio-card">
+                  <div class="portfolio-card-overlay">
+                    <img
+                      src="./images/row-1-img-3.jpg"
+                      width="360"
+                      alt="Meditation App"
+                    />
+                    <p class="portfolio-card-desc">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                  <div class="portfolio-text-wrapper">
+                    <h3 class="portfolio_title">Meditation App</h3>
+                    <p class="portfolio_description">App</p>
+                  </div>
                 </div>
               </a>
             </li>
 
-            <!-- Row 3 Cards -->
-            <li class="project-card">
-              <a href="" class="project link">
-                <div class="project-cover-wrap">
-                  <img
-                    src="./images/row-3-img-1.jpg"
-                    alt="instagram stories designs"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project-cover-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam temporibus maxime labore incidunt dolorum
-                    assumenda ullam ratione sint dolorem tenetur!
-                  </p>
-                </div>
-
-                <div class="substrate">
-                  <h2 class="name">Instagram Stories Concept</h2>
-
-                  <p class="type">Design</p>
+            <li class="portfolio-item">
+              <a href="#" class="portfolio-link link">
+                <div class="portfolio-card">
+                  <div class="portfolio-card-overlay">
+                    <img
+                      src="./images/row-2-img-1.jpg"
+                      width="360"
+                      alt="Taxi Service"
+                    />
+                    <p class="portfolio-card-desc">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                  <div class="portfolio-text-wrapper">
+                    <h3 class="portfolio_title">Taxi Service</h3>
+                    <p class="portfolio_description">Marketing</p>
+                  </div>
                 </div>
               </a>
             </li>
 
-            <li class="project-card">
-              <a href="" class="project link">
-                <div class="project-cover-wrap">
-                  <img
-                    src="./images/row-3-img-2.jpg"
-                    alt="organic food website"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project-cover-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam temporibus maxime labore incidunt dolorum
-                    assumenda ullam ratione sint dolorem tenetur!
-                  </p>
-                </div>
-
-                <div class="substrate">
-                  <h2 class="name">Organic Food</h2>
-
-                  <p class="type">Web Site</p>
+            <li class="portfolio-item">
+              <a href="#" class="portfolio-link link">
+                <div class="portfolio-card">
+                  <div class="portfolio-card-overlay">
+                    <img
+                      src="./images/row-2-img-2.jpg"
+                      width="360"
+                      alt="Screen Illustrations"
+                    />
+                    <p class="portfolio-card-desc">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                  <div class="portfolio-text-wrapper">
+                    <h3 class="portfolio_title">Screen Illustrations</h3>
+                    <p class="portfolio_description">Design</p>
+                  </div>
                 </div>
               </a>
             </li>
 
-            <li class="project-card">
-              <a href="" class="project link">
-                <div class="project-cover-wrap">
-                  <img
-                    src="./images/row-3-img-3.jpg"
-                    alt="fresh coffee image"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="project-cover-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam temporibus maxime labore incidunt dolorum
-                    assumenda ullam ratione sint dolorem tenetur!
-                  </p>
+            <li class="portfolio-item">
+              <a href="#" class="portfolio-link link">
+                <div class="portfolio-card">
+                  <div class="portfolio-card-overlay">
+                    <img
+                      src="./images/row-2-img-3.jpg"
+                      width="360"
+                      alt="Online Courses"
+                    />
+                    <p class="portfolio-card-desc">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                  <div class="portfolio-text-wrapper">
+                    <h3 class="portfolio_title">Online Courses</h3>
+                    <p class="portfolio_description">Marketing</p>
+                  </div>
                 </div>
+              </a>
+            </li>
 
-                <div class="substrate">
-                  <h2 class="name">Fresh Coffee</h2>
+            <li class="portfolio-item">
+              <a href="#" class="portfolio-link link">
+                <div class="portfolio-card">
+                  <div class="portfolio-card-overlay">
+                    <img
+                      src="./images/row-3-img-1.jpg"
+                      width="360"
+                      alt="Instagram Stories Concept"
+                    />
+                    <p class="portfolio-card-desc">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                  <div class="portfolio-text-wrapper">
+                    <h3 class="portfolio_title">Instagram Stories Concept</h3>
+                    <p class="portfolio_description">Design</p>
+                  </div>
+                </div>
+              </a>
+            </li>
 
-                  <p class="type">Web Site</p>
+            <li class="portfolio-item">
+              <a href="#" class="portfolio-link link">
+                <div class="portfolio-card">
+                  <div class="portfolio-card-overlay">
+                    <img
+                      src="./images/row-3-img-2.jpg"
+                      width="360"
+                      alt="Organic Food"
+                    />
+                    <p class="portfolio-card-desc">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                  <div class="portfolio-text_wrapper">
+                    <h3 class="portfolio_title">Organic Food</h3>
+                    <p class="portfolio_description">Web Site</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-item">
+              <a href="#" class="portfolio-link link">
+                <div class="portfolio-card">
+                  <div class="portfolio-card-overlay">
+                    <img
+                      src="./images/row-3-img-3.jpg"
+                      width="360"
+                      alt="Fresh Coffee"
+                    />
+                    <p class="portfolio-card-desc">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                  <div class="portfolio-text_wrapper">
+                    <h3 class="portfolio_title">Fresh Coffee</h3>
+                    <p class="portfolio_description">Web Site</p>
+                  </div>
                 </div>
               </a>
             </li>
@@ -311,13 +305,13 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="page-footer bg-footer">
-      <div class="container">
+    <footer class="footer">
+      <div class="container row">
         <!-- Footer Logo -->
-        <div>
-          <a class="logo-link" href="./index.html">
-            <span class="logo">WEB</span>
-            <span class="studio-footer">STUDIO</span>
+        <div class="footer-container">
+          <a class="link" href="./index.html">
+            <span class="logo-web">WEB</span>
+            <span class="logo-studio-white">STUDIO</span>
           </a>
 
           <p class="footer-description">
@@ -339,7 +333,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="footer-social-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#instagram-icon"></use>
                 </svg>
               </a>
             </li>
@@ -351,7 +345,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="footer-social-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#twitter-icon"></use>
                 </svg>
               </a>
             </li>
@@ -363,7 +357,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="footer-social-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#facebook-icon"></use>
                 </svg>
               </a>
             </li>
@@ -375,7 +369,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="footer-social-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
+                  <use href="./images/icons.svg#linkedin-icon"></use>
                 </svg>
               </a>
             </li>
@@ -400,7 +394,7 @@
             <button type="submit" class="footer-form-button">
               Subscribe
               <svg class="footer-subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-submit"></use>
+                <use href="./images/icons.svg#submit-icon"></use>
               </svg>
             </button>
           </form>
